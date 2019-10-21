@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Ma page gossip</title>
+  </head>
+  <body>
+    <h1>Page potin</h1>
+    <h2>Voici le numéro du potin que tu veux : <%=params['id']%></h2>
+    <p> Son auteur : <%= gossip.author %><br/>
+    Le contenu du potin : <%= gossip.content %></p>
+    <a href="/">Lien pour revenir à la page des potins</a>
+  </body>
+</html>

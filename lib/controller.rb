@@ -15,4 +15,8 @@ class ApplicationController < Sinatra::Base
     redirect '/'
   end
 
+    get '/gossip/:id' do
+    erb :show, locals: {gossip: Gossip.find(params[:id])} #récup et affiche les potins par id
+  end
+
 end
